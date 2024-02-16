@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script>
+       function validate(){
+        var user = document.getElementById("user").value;
+        var password = document.getElementById("password").value;
+          if(!user || !password){
+            alert("empty");
+            return false;
+          }
+          else{
+                 true;
+          }
+       }      
+    </script>
+</head>
+<body>
+<form onsubmit="return validate()" action="message.html">
+  username<input type="text" id="user"placeholder="enter username"> <br><br>
+
+  password<input type="text" id="password"placeholder="enter password"><br><br> 
+
+  <button type="submit">
+    send</button>
+</form>
+</body>
+</html> 
